@@ -13,6 +13,7 @@ void main(){
 	ifstream stream("TEXT.TXT");
 	while(!stream.eof()){
 		stream>>string;
+		position=0;
 	}
 	stream.close();
 }
