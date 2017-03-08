@@ -15,7 +15,8 @@ void main(){
 		stream>>string;
 		start_position=0;
 		do{
-
+			for(cycle=0;cycle<16;++cycle){
+			}
 			while(string[++start_position]!=' ');
 			while(string[++start_position]==' ');
 		}while(start_position<1024);
