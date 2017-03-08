@@ -4,4 +4,6 @@
 using namespace std;
 
 void main(){
+	ifstream stream("TEXT.TXT");
+	stream.close();
 }
