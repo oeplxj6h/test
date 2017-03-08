@@ -18,12 +18,13 @@ void main(){
 		do{
 			conformity=false;
 			for(cycle=0;cycle<18;++cycle){
+				position=start_position;
 				if(!conformity){
-
 				}
 			}
 			if(conformity)
 				++mood;
+			start_position=position;
 			while(string[++start_position]!=' ');
 			while(string[++start_position]==' ');
 		}while(start_position<1024);
