@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string.h>
 
 using namespace std;
 
@@ -18,6 +19,7 @@ void main(){
 			conformity=false;
 			for(cycle=0;cycle<16;++cycle){
 				if(!conformity){
+
 				}
 			}
 			if(conformity)
