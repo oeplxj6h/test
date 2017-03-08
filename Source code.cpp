@@ -17,17 +17,18 @@ void main(){
 		start_position=0;
 		do{
 			conformity=false;
-			for(cycle=0;cycle<18;++cycle){
-				position=start_position;
+			for(cycle=0;cycle<18;++cycle)
 				if(!conformity){
+					for(position=start_position;string[position]==words[cycle][position-start_position];++position);
+					if(position-start_position==strlen(words[cycle]))
+						conformity=true;
 				}
-			}
 			if(conformity)
 				++mood;
 			start_position=position;
 			while(string[++start_position]!=' ');
 			while(string[++start_position]==' ');
-		}while(start_position<1024);
+		}while(start_position<strlen(string));
 	}
 	stream.close();
 	cout<<"Количество негативных слов в тексте, заданном файлом TEXT.TXT: "<<mood<<endl<<endl;
