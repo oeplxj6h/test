@@ -15,11 +15,17 @@ void main(){
 		stream>>string;
 		start_position=0;
 		do{
+			conformity=false;
 			for(cycle=0;cycle<16;++cycle){
+				if(!conformity){
+				}
 			}
+			if(conformity)
+				++mood;
 			while(string[++start_position]!=' ');
 			while(string[++start_position]==' ');
 		}while(start_position<1024);
 	}
 	stream.close();
+	cout<<"Количество негативных слов в тексте, заданном файлом TEXT.TXT: "<<mood<<endl<<endl;
 }
