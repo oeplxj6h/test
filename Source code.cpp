@@ -5,7 +5,7 @@ using namespace std;
 
 void main(){
 	setlocale(LC_ALL, "rus");
-	bool nonconformity;
+	bool conformity;
 	unsigned short int start_position,position,cycle;
 	signed int mood=0;
 	char string[1024];
