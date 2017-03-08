@@ -14,6 +14,11 @@ void main(){
 	while(!stream.eof()){
 		stream>>string;
 		start_position=0;
+		do{
+
+			while(string[++start_position]!=' ');
+			while(string[++start_position]==' ');
+		}while(start_position<1024);
 	}
 	stream.close();
 }
