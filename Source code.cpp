@@ -12,6 +12,7 @@ void main(){
 	char words[16][23]={"плох","нехорош","некачествен","пошл","дур","дрян","горе","горь","тёмн","хруп","скот","гад","отриц","негати","глуп","туп"};
 	ifstream stream("TEXT.TXT");
 	while(!stream.eof()){
+		stream>>string;
 	}
 	stream.close();
 }
