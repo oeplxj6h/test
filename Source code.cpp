@@ -4,6 +4,9 @@
 
 using namespace std;
 
+char make_letter_capital(char letter){
+}
+
 void main(){
 	setlocale(LC_ALL, "rus");
 	bool conformity;
