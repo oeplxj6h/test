@@ -5,6 +5,7 @@
 using namespace std;
 
 char make_letter_capital(char letter){
+	return letter;
 }
 
 void main(){
