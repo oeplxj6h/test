@@ -25,7 +25,7 @@ void main(){
 			conformity=false;
 			for(cycle=0;cycle<18;++cycle)
 				if(!conformity){
-					for(position=start_position;string[position]==words[cycle][position-start_position];++position);
+					for(position=start_position;make_letter_lower_case(string[position])==words[cycle][position-start_position];++position);
 					if(position-start_position==strlen(words[cycle]))
 						conformity=true;
 				}
