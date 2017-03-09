@@ -4,7 +4,9 @@
 
 using namespace std;
 
-char make_letter_capital(char letter){
+char make_letter_lower_case(char letter){
+	if((letter>-65)&&(letter<-34))
+		return letter+32;
 	return letter;
 }
 
